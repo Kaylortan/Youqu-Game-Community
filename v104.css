@@ -1,0 +1,10 @@
+/* v1.0.4: white card hover, unified messages and code-only redemption. */
+#phone :is(.activity-card,.game-card,.account-card,.team-card,.cover-card,.discuss-card,.order-card,.member-gift-card,.list-row){background-color:#fff}
+#phone :is(.activity-card,.game-card,.account-card,.team-card,.cover-card,.discuss-card,.order-card,.member-gift-card,.list-row,.member-mini){transition:background-color .16s ease,box-shadow .16s ease}
+@media(hover:hover) and (pointer:fine){
+#phone :is(.activity-card,.game-card,.account-card,.team-card,.cover-card,.discuss-card,.order-card,.member-gift-card,.list-row,.member-mini):hover{filter:none;background:#fff;box-shadow:inset 0 0 0 1px #e5e7eb,0 4px 12px #1f293714}
+}
+#phone :is(.activity-card,.game-card,.account-card,.team-card,.cover-card,.discuss-card,.order-card,.member-gift-card,.list-row,.member-mini):focus-visible{filter:none;background:#fff;outline:2px solid #9ca3af;outline-offset:-2px}
+.message-shortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:22px 16px 20px;background:#fff;border-bottom:8px solid #f6f7f9;flex-shrink:0}.message-shortcut{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;font-size:12px;padding:0;min-width:0}.shortcut-icon{position:relative;width:48px;height:48px;border-radius:16px;background:#fff7d7;color:#8e7930;display:flex;align-items:center;justify-content:center}.message-shortcut:nth-child(2) .shortcut-icon{background:#edf4ff;color:#7295bf}.message-shortcut:nth-child(3) .shortcut-icon{background:#fff0ef;color:#c28580}.shortcut-count{position:absolute;top:-3px;right:-5px;min-width:17px;height:17px;line-height:17px;text-align:center;background:#ee7c72;color:#fff;border-radius:10px;font-size:9px;font-style:normal;padding:0 4px}.message-read-tools{padding:8px 16px 3px}.message-feed .conversation-row{padding:15px 16px;min-height:78px}.message-feed .conversation-meta{min-width:73px}.message-feed .row-copy b{font-weight:500}.message-feed .row-copy p{margin-top:5px}
+
+.toast.redeem-feedback{top:23%;padding:11px 16px;min-width:135px}
